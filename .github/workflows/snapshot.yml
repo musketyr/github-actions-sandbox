@@ -8,6 +8,6 @@ jobs:
       - name: Get current date
         id: date
         run: |
-          echo "SNAPSHOT_SUFFIX=$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
+          echo "SNAPSHOT_SUFFIX=8.0-$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
       - name: Test with environment variables
         run: echo $SNAPSHOT_SUFFIX
